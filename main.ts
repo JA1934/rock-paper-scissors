@@ -1,7 +1,7 @@
 input.onButtonPressed(Button.A, function () {
     PLAYERASCORE = PLAYERASCORE + 1
     basic.showNumber(PLAYERASCORE)
-    if (PLAYERASCORE == 5) {
+    if (PLAYERASCORE == 10) {
         basic.showString("PLAYER A WINS")
     }
 })
@@ -12,7 +12,7 @@ input.onButtonPressed(Button.AB, function () {
 input.onButtonPressed(Button.B, function () {
     PLAYERBSCORE = PLAYERBSCORE + 1
     basic.showNumber(PLAYERBSCORE)
-    if (PLAYERBSCORE == 5) {
+    if (PLAYERBSCORE == 10) {
         basic.showString("PLAYER B WINS")
     }
 })
