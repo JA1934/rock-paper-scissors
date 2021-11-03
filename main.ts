@@ -1,4 +1,21 @@
-let hand = 0
+input.onButtonPressed(Button.A, function () {
+    PLAYERASCORE = PLAYERASCORE + 1
+    basic.showNumber(PLAYERASCORE)
+    if (PLAYERASCORE == 5) {
+        basic.showString("PLAYER A WINS")
+    }
+})
+input.onButtonPressed(Button.AB, function () {
+    PLAYERASCORE = 0
+    PLAYERBSCORE = 0
+})
+input.onButtonPressed(Button.B, function () {
+    PLAYERBSCORE = PLAYERBSCORE + 1
+    basic.showNumber(PLAYERBSCORE)
+    if (PLAYERBSCORE == 5) {
+        basic.showString("PLAYER B WINS")
+    }
+})
 input.onGesture(Gesture.Shake, function () {
     hand = randint(1, 3)
     if (hand == 1) {
@@ -48,6 +65,8 @@ input.onGesture(Gesture.Shake, function () {
             `)
     }
 })
-basic.forever(function () {
-	
-})
+let hand = 0
+let PLAYERBSCORE = 0
+let PLAYERASCORE = 0
+PLAYERASCORE = 0
+PLAYERBSCORE = 0
