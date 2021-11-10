@@ -65,6 +65,7 @@ input.onGesture(Gesture.Shake, function () {
             `)
     }
 })
+// set both players to 0
 let hand = 0
 let PLAYERBSCORE = 0
 let PLAYERASCORE = 0
